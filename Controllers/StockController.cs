@@ -63,9 +63,10 @@ namespace StockAPI.Controllers
             }
 
             stockModel.Symbol = updateStockDto.Symbol;
-            stockModel.Company = updateStockDto.Company;
+            stockModel.CompanyName = updateStockDto.CompanyName;
             stockModel.Purchase = updateStockDto.Purchase;
             stockModel.LastDiv = updateStockDto.LastDiv;
+            stockModel.Industry = updateStockDto.Industry;
             stockModel.MarketCap = updateStockDto.MarketCap;
 
             _context.SaveChanges();

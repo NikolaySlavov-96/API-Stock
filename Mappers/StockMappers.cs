@@ -15,9 +15,10 @@ namespace StockAPI.Mappers
             {
                 Id = stockModel.Id,
                 Symbol = stockModel.Symbol,
-                Company = stockModel.Company,
+                CompanyName = stockModel.CompanyName,
                 Purchase = stockModel.Purchase,
                 LastDiv = stockModel.LastDiv,
+                Industry = stockModel.Industry,
                 MarketCap = stockModel.MarketCap,
             };
         }
@@ -27,9 +28,10 @@ namespace StockAPI.Mappers
             return new Stock
             {
                 Symbol = stockDto.Symbol,
-                Company = stockDto.Company,
+                CompanyName = stockDto.CompanyName,
                 Purchase = stockDto.Purchase,
                 LastDiv = stockDto.LastDiv,
+                Industry = stockDto.Industry,
                 MarketCap = stockDto.MarketCap,
             };
         }
