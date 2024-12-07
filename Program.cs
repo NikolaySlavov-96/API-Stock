@@ -7,6 +7,7 @@ using StockAPI.Data;
 using StockAPI.Interfaces;
 using StockAPI.Models;
 using StockAPI.Repository;
+using StockAPI.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -61,6 +62,7 @@ builder.Services.AddAuthentication(option =>
 
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 
