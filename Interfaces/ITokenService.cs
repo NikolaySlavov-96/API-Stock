@@ -8,6 +8,6 @@ namespace StockAPI.Interfaces
 {
     public interface ITokenService
     {
-        string CreationToken(AppUser appUser);
+        string CreateToken(AppUser appUser);
     }
 }
