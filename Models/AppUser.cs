@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace StockAPI.Models
 {
-    public class AppUser: IdentityUser
+    public class AppUser : IdentityUser
     {
         // public int Risk { get; set; }
+        public List<Portfolio> Portfolios { get; set; } = new List<Portfolio>();
     }
 }
